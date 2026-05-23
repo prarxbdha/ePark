@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Parking Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Smart Parking Dashboard</h1>
+      <p>Parking slot monitoring system</p>
+    </header>
+
+    <section class="summary">
+      <h2>Available Slots: <span id="freeCount">0</span></h2>
+    </section>
+
+    <section class="slot-grid" id="slotGrid">
+      <!-- Slot cards will be added here by JavaScript -->
+    </section>
+  </main>
+</body>
+</html>
